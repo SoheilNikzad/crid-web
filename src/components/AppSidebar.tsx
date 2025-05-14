@@ -11,7 +11,8 @@ import {
   Moon, 
   Sun, 
   Globe,
-  Users
+  Users,
+  Info
 } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { 
@@ -30,6 +31,7 @@ const AppSidebar: React.FC = () => {
   const navItems = [
     { icon: <MessageSquare size={24} />, label: t('chats'), path: '/chats' },
     { icon: <Users size={24} />, label: t('contacts'), path: '/contacts' },
+    { icon: <Info size={24} />, label: t('about'), path: '/about' },
     { icon: <Settings size={24} />, label: t('settings'), path: '/settings' },
   ];
 
@@ -38,11 +40,11 @@ const AppSidebar: React.FC = () => {
       {/* App Title */}
       <div className="px-4 mb-6">
         <h1 className="text-sidebar-foreground font-bold text-lg hidden md:block">
-          {t('appName')}
+          CRID WEB
         </h1>
         <div className="md:hidden flex justify-center">
-          <div className="w-8 h-8 rounded-full bg-crypto-primary flex items-center justify-center text-white font-bold">
-            CT
+          <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white font-bold">
+            CW
           </div>
         </div>
       </div>
